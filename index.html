@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>startsida</title>
+    <link rel="stylesheet" href="layout.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Standard favicon för äldre/alla webbläsare -->
+    <link rel="icon" href="favicon_io/favicon.ico" sizes="32x32" />
+
+    <!-- Ikon för Apple/iOS-enheter när sidan sparas på hemskärmen -->
+    <link rel="apple-touch-icon" href="favicon_io/apple-touch-icon.png" />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/Logo.png" alt="logo" />
+        </a>
+      </div>
+
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html" class="active">startsida</a></li>
+          <li><a href="snabb frukost.html">snabb frukost</a></li>
+          <li><a href="näringsrik frukost.html">näringsrik frukost</a></li>
+          <li><a href="helgfrukost.html">helgfrukost</a></li>
+          <li><a href="meal prep.html">meal prep</a></li>
+          <button class="close-menu">✕</button>
+        </ul>
+
+        <button class="hamburger" aria-label="öppna meny">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <div class="startsida_grid_1-1">
+        <img src="images/hero_img_startsida.png" alt="heroimg" />
+
+        <div class="hero_text">
+          <h2>frukost hela dagen!</h2>
+          <h1>frukost</h1>
+          <h3>inspiration, recept & smarta tips för en bättre start på dagen.</h3>
+        </div>
+      </div>
+      <div class="startsida_knappar">
+        <a href="snabb frukost.html" class="button">snabb frukost</a>
+        <a href="#kategorier" class="button">kategorier</a>
+      </div>
+
+      <div class="startsida_info">
+        <h2>frukost är så mycket mer än bara en måltid.</h2>
+        <h3>Sett från perspektivet av någon som älskar frukost är frukost inte bara något man äter för att stilla hungern. Det är dagens första energikälla och en stund att se fram emot, oavsett om det handlar om en snabb macka eller en lång helgfrukost.</h3>
+        <p>Förhoppningsvis hittar du inspiration bland våra tips på snabba frukostar, näringsrika alternativ, helgfrukostar och smart meal prep. Oavsett vilka vanor eller preferenser du har kan en genomtänkt frukost ge dig en bättre start på dagen.</p>
+        <p>Lycka till med att hitta dina nya frukostfavoriter!</p>
+      </div>
+
+      <section class="info_2kol">
+        <div class="startsida_viktigt">
+          <h2>Varför är frukost viktigt?</h2>
+          <p>Frukosten beskrivs ofta som <strong>dagens viktigaste mål</strong>, och det finns goda skäl till det. Efter en hel natts sömn bryter frukosten nattfastan och ger kroppen den <strong>första energin inför dagen.</strong> En näringsrik start fyller på energidepåerna så att du får kraft och ork att komma igång.</p>
+          <p>Utöver att ge fysisk energi har frukosten en <strong>stor betydelse för hjärnan.</strong> När du fyller på med näring på morgonen hålls blodsockret på en jämn nivå, vilket <strong>ökar koncentrationen och förbättrar fokus.</strong> Det gör det lättare att orka tänka, prestera och hålla ett jämnt humör i skolan eller på arbetet.</p>
+          <p>Att äta frukost bidrar dessutom till att <strong>skapa goda matvanor</strong> och en regelbunden måltidsrytm. Enligt rekommendationer från både 1177 och Livsmedelsverket motverkar en stabil måltidsordning risken för småätande under dagen och hjälper kroppen att behålla en sund balans hela dagen.</p>
+        </div>
+
+        <div class="höger_kolumn">
+          <div class="innehålla">
+            <h2>Vad bör en bra frukost innehålla?</h2>
+            <p>Enligt riktlinjer för bra matvanor och ett allsidigt ätande bör en balanserad frukost kombineras av flera olika näringsämnen för att ge kroppen energi och hålla ett jämnt blodsocker:</p>
+            <img src="images/tallriksmodellen_img.png" alt="tallriksmodellen" />
+          </div>
+
+          <div class="näringsämnen_tallriksmodellen">
+            <div class="näringsämnen_1">
+              <details class="fett">
+                <summary>Hälsosamma fetter</summary>
+                <p>Att välja nyttigare och omättade fetter, till exempel genom Nyckelhålsmärkta alternativ, nötsmör eller frön, ger kroppen och hjärnan värdefull näring.</p>
+              </details>
+
+              <details class="vitaminer">
+                <summary>Vitaminer & antioxidanter</summary>
+                <p>Att inkludera frukt, bär eller grönsaker tillför viktiga vitaminer, mineraler och antioxidanter.</p>
+              </details>
+            </div>
+            <div class="näringsämnen_2">
+              <details class="protein">
+                <summary>Protein</summary>
+                <p>Mjölkprodukter som yoghurt, fil eller mjölk, samt ägg eller baljväxter, tillför protein som hjälper kroppen att bygga och bevara muskler samt ger god mättnad.</p>
+              </details>
+
+              <details class="kolhydrater">
+                <summary>Kolhydrater & fullkorn</summary>
+                <p>Fiberrika kolhydrater och fullkorn från exempelvis grovt bröd, havregrynsgröt eller osötad granola ger långvarig energi och fibrer.</p>
+              </details>
+            </div>
+
+            <p>Genom att variera frukosten utifrån dessa grupper får kroppen en idealistisk start med rätt bränsle inför dagens alla stunder!</p>
+          </div>
+        </div>
+      </section>
+
+      <div id="kategorier" class="kategorier">
+        <h2>Kategorier</h2>
+        <h3>Hitta innehållet som passar dig!</h3>
+
+        <div class="kategorier_1">
+          <a href="snabb frukost.html" class="snabb_frukost_box">
+            <h3>Snabb frukost</h3>
+            <p>När du har ont om tid på morgonen.</p>
+            <img src="images/hero_snabb_img.png" alt="snabb frukost" />
+          </a>
+
+          <a href="näringsrik frukost.html" class="näringsrik_frukost_box">
+            <h3>Näringsrik frukost</h3>
+            <p>Frukostar fyllda med energi & näring.</p>
+            <img src="images/hero_näring_img.png" alt="näringsrik frukost" />
+          </a>
+
+          <a href="helgfrukost.html" class="helg_frukost_box">
+            <h3>Helgfrukost</h3>
+            <p>När du vill unna dig något extra gott.</p>
+            <img src="images/hero_helg_img.png" alt="helgfrukost" />
+          </a>
+
+          <a href="meal prep.html" class="meal_prep_box">
+            <h3>Meal prep</h3>
+            <p>Förbered & minska morgonstress.</p>
+            <img src="images/hero_meal_img.png" alt="meal prep" />
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer_vanster">
+        <img src="images/Logo.png" alt="Breakfast Daily logo" class="footer_logo" />
+
+        <h2>breakfast daily</h2>
+
+        <div class="footer_lankar">
+          <a href="#">om oss</a>
+          <a href="#">kontakta oss</a>
+        </div>
+
+        <div class="footer_socials">
+          <h3>socials</h3>
+          <a href="#">instagram</a>
+          <a href="#">facebook</a>
+        </div>
+      </div>
+
+      <div class="footer_bild">
+        <img src="images/Footer_Img_.png" alt="Kaffekopp" />
+      </div>
+    </footer>
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const menu = document.querySelector(".menu");
+      const closeButton = document.querySelector(".close-menu");
+
+      hamburger.addEventListener("click", () => {
+        menu.classList.toggle("active");
+      });
+
+      closeButton.addEventListener("click", () => {
+        menu.classList.remove("active");
+      });
+    </script>
+  </body>
+</html>

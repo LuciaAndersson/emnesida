@@ -1,0 +1,872 @@
+/********färger************/
+:root {
+  --cream: #fff6e8;
+  --butter: #fbe9a8;
+  --salvia: #bbd694;
+  --oceandeep: #2b3e52;
+}
+
+/*grund*/
+
+body {
+  background-color: var(--cream);
+  color: var(--oceandeep);
+  font-family: "Poppins", sans-serif;
+}
+
+/*header*/
+
+header {
+  background-color: var(--salvia);
+  padding: 15px 20px;
+}
+
+.logo img {
+  width: 55px;
+}
+
+.menu a {
+  color: var(--oceandeep);
+  text-decoration: none;
+  font-weight: bold;
+}
+/*************hamburgarmeny**********/
+.close-menu {
+  background: none;
+  border: none;
+  color: var(--cream);
+  font-size: 2rem;
+  cursor: pointer;
+
+  margin-top: auto;
+  align-self: center;
+}
+
+/*footer*/
+footer {
+  background-color: var(--salvia);
+}
+
+.footer_vanster h2,
+.footer_vanster a,
+.footer_socials h3,
+.footer_socials a {
+  color: var(--cream);
+}
+
+.footer_vanster a,
+.footer_socials a {
+  text-decoration: none;
+}
+
+.footer_socials {
+  .footer_socials {
+    position: absolute;
+    top: 130px;
+    left: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+***************************************************startsida********************************************************
+
+/*knappar*/
+.startsida_knappar .button {
+  text-decoration: none;
+  color: var(--cream) !important;
+}
+
+.startsida_knappar a:first-child {
+  background-color: var(--oceandeep);
+}
+
+.startsida_knappar a:last-child {
+  background-color: var(--salvia);
+}
+
+/*text*/
+.startsida_info {
+  text-align: center;
+  padding: 40px 25px;
+}
+
+.startsida_info h2 {
+  color: var(--salvia);
+  font-size: 28px;
+}
+
+.startsida_info h3 {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.startsida_info p {
+  line-height: 1.6;
+}
+
+/****varför viktigt***/
+.startsida_viktigt {
+  padding: 20px;
+}
+.startsida_viktigt {
+  background-color: var(--oceandeep);
+  color: var(--cream);
+  padding: 40px 25px;
+}
+
+.startsida_viktigt h2 {
+  color: var(--butter);
+}
+
+.startsida_viktigt p {
+  color: var(--cream);
+}
+
+.startsida_viktig p {
+  line-height: 1.6;
+}
+
+/*****frukost innehålla**/
+.innehålla {
+  padding: 20px;
+  background-color: var(--butter);
+}
+
+/* Näringsämnen – bakgrund */
+
+.näringsämnen_tallriksmodellen {
+  background-color: var(--butter);
+  padding: 35px 20px;
+  margin-top: 0;
+}
+
+/* Tallriksmodellen-bilden */
+
+.näringsämnen_tallriksmodellen img {
+  width: 100%;
+  max-width: 300px;
+  margin: 25px auto;
+}
+
+/* Färger på knapparna */
+
+.näringsämnen_tallriksmodellen .fett,
+.näringsämnen_tallriksmodellen .kolhydrater {
+  background-color: var(--salvia);
+}
+
+.näringsämnen_tallriksmodellen .protein,
+.näringsämnen_tallriksmodellen .vitaminer {
+  background-color: var(--oceandeep);
+}
+
+/* Utfällbara knappar */
+
+.näringsämnen_tallriksmodellen details {
+  border-radius: 12px;
+  overflow: hidden;
+  align-self: start;
+}
+
+.näringsämnen_tallriksmodellen summary {
+  color: var(--cream);
+  font-size: small;
+  padding: 10px;
+  cursor: pointer;
+  list-style: none;
+  text-align: center;
+}
+
+/* Tar bort webbläsarens standardpil */
+
+.näringsämnen_tallriksmodellen summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Texten som fälls ut */
+
+details {
+  margin-bottom: 15px;
+}
+
+details p {
+  line-height: 1.5;
+  color: var(--cream);
+  padding: 20px;
+}
+
+/*kategorier*/
+
+.kategorier {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: var(--cream);
+}
+
+.kategorier h2 {
+  color: var(--salvia);
+  font-size: 30px;
+}
+
+.kategori_1 {
+  text-align: center;
+}
+
+.snabb_frukost_box,
+.näringsrik_frukost_box,
+.helg_frukost_box,
+.meal_prep_box {
+  background-color: var(--cream);
+  text-decoration: none;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.snabb_frukost_box h3,
+.näringsrik_frukost_box h3,
+.helg_frukost_box h3,
+.meal_prep_box h3 {
+  color: var(--oceandeep);
+  margin: 20px 15px 5px;
+  margin-bottom: 5px;
+}
+
+.snabb_frukost_box p,
+.näringsrik_frukost_box p,
+.helg_frukost_box p,
+.meal_prep_box p {
+  color: var(--oceandeep);
+  margin: 0 15px 20px;
+  margin-top: 0;
+}
+
+/*bilder*/
+.snabb_frukost_box img,
+.näringsrik_frukost_box img,
+.helg_frukost_box img,
+.meal_prep_box img {
+  border-radius: 15px;
+}
+
+/*****************'startsida desktop************************/
+
+@media (min-width: 768px) {
+  /*under hero*/
+  .startsida_info {
+    max-width: 700px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  /*viktig sida + näringsämnen*/
+
+  .info_2kol {
+    background-color: var(--butter);
+    padding: 30px;
+    margin: 0 auto;
+    max-width: auto;
+  }
+  .startsida_viktigt {
+    border-radius: 15px;
+  }
+
+  .startsida_viktigt p,
+  .innehålla p {
+    font-size: 1rem;
+  }
+  .innehålla img {
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+  }
+  .näringsämnen_tallriksmodellen summary {
+    padding: 15px;
+  }
+
+  .hoger_kolumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .näringsämnen_tallriksmodellen {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  /*kategorier*/
+  .kategorier h2 {
+    font-size: 60px;
+    margin-bottom: -10px;
+  }
+}
+/*************************************************************************************************************/
+
+/*****************''snabb frukost mobil**************************/
+
+/*tre knep*/
+.tre_knep {
+  background-color: var(--oceandeep);
+  padding: 50px 5%;
+
+  max-width: auto;
+  margin: 60px auto;
+}
+
+.tre_knep h2 {
+  color: var(--butter);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.tips1,
+.tips2,
+.tips3 {
+  padding: 25px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.tips1,
+.tips3 {
+  background-color: var(--butter);
+}
+
+.tips2 {
+  background-color: var(--salvia);
+}
+
+.tips1 h3,
+.tips2 h3,
+.tips3 h3 {
+  margin-bottom: 15px;
+}
+
+.tips1 strong,
+.tips2 strong {
+  font-weight: 700;
+}
+
+/*favoriter*/
+
+.favoritkombinationer {
+  padding: 0 20px;
+}
+.powermacka_text,
+.snabbskålen_text {
+  background-color: var(--butter);
+  padding: 15px;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.text_box_smoothie {
+  background-color: var(--oceandeep);
+  color: var(--cream);
+  border-top-left-radius: 15px;
+  padding: 15px;
+}
+
+.basrecept_smoothie {
+  margin-top: 0;
+  background-color: var(--salvia);
+  padding: 15px;
+  color: var(--cream);
+  border-bottom-left-radius: 15px;
+  margin: 0;
+  transition: transform 0.2s ease;
+}
+
+.basrecept_smoothie:hover {
+  transform: translateY(-8px);
+}
+
+.basrecept_smoothie summary {
+  margin: 0;
+}
+
+.powermacka_img img,
+.snabbskålen_img img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.supersmoothie_img img {
+  border-top-left-radius: 0;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+/**************'snabb frukost desktop**************/
+
+@media (min-width: 768px) {
+  /*hero*/
+
+  .snabbfrukost_grid_1-1 {
+    height: 550px;
+  }
+  .hero_text_snabbfrukost h1 {
+    font-size: 60px;
+    margin-bottom: 5px;
+  }
+  .hero_text_snabbfrukost h2 {
+    margin-top: 0;
+  }
+  /*under hero*/
+  .snabbfrukost_info {
+    max-width: 700px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  /*tre knep*/
+
+  .tre_knep {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: none;
+    width: 100%;
+    margin: 0;
+  }
+
+  .tre_knep h2 {
+    grid-column: 1/-1;
+  }
+
+  /*favoritkombos*/
+
+  .powermacka_img img,
+  .supersmoothie_img img,
+  .snabbskålen_img img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  .powermacka_text,
+  .text_box_smoothie,
+  .snabbskålen_text {
+    background-color: transparent;
+    color: var(--oceandeep);
+  }
+  .basrecept_smoothie summary {
+    background-color: var(--salvia);
+    color: var(--cream);
+    padding: 12px;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+  }
+}
+/****************************************************************************************/
+
+/***************************näringsrik frukost mobil***************************/
+
+/*under hero*/
+.näringsrikfrukost_info {
+  text-align: center;
+  padding: 40px 25px;
+}
+
+.näringsrikfrukost_info h2 {
+  color: var(--salvia);
+  font-size: 28px;
+}
+
+.näringsrikfrukost_info p {
+  line-height: 1.6;
+}
+
+/*vad varför hur*/
+.vad_varför_hur {
+  background-color: var(--butter);
+  padding: 50px 20px;
+}
+
+.vad_varför_hur h2 {
+  text-align: center;
+  color: var(--oceandeep);
+  margin-bottom: 30px;
+}
+
+.kolhydrater details,
+.fetter details {
+  background-color: var(--oceandeep);
+}
+
+.protein details,
+.vitaminer details {
+  background-color: var(--salvia);
+}
+
+.kolhydrater details,
+.vitaminer details,
+.protein details,
+.fetter details {
+  color: var(--cream);
+  text-align: start;
+
+  border-radius: 0 0 20px 20px;
+
+  padding: 10px;
+}
+
+/*tre näringsfrukostar*/
+
+.tre_näringsfrukostar {
+  padding: 40px 20px;
+}
+
+.tre_näringsfrukostar h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.avokadotoast,
+.acai,
+.proteingröt {
+  width: 400px;
+  margin: 0 auto 30px auto;
+}
+
+.avokadotoast img,
+.acai img,
+.proteingröt img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.avokadotoast_text,
+.acai_text,
+.proteingröt_text {
+  background-color: var(--butter);
+
+  padding: 20px;
+
+  border-radius: 0 0 25px 25px;
+}
+
+.avokadotoast_text h3,
+.acai_text h3,
+.proteingröt_text h3 {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+/***********************************näringsrik frukost desktop*************/
+
+@media (min-width: 768px) {
+  /*hero*/
+
+  .näringsrikfrukost_grid_1-1 {
+    height: 550px;
+  }
+  .hero_text_näringsrikfrukost h1 {
+    font-size: 60px;
+    margin-bottom: 5px;
+  }
+  .hero_text_näringsrikfrukost h2 {
+    margin-top: 0;
+  }
+  /*under hero*/
+  .näringsrikfrukost_info {
+    max-width: 700px;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+/******************************helgfrukost mobil************/
+
+/*tre klassiska*/
+
+.tre_klassiska {
+  padding: 40px 20px;
+  background-color: var(--butter);
+}
+
+.tre_klassiska h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.pannkakor,
+.brunchtallrik,
+.fransktoast {
+  width: 400px;
+  margin: 0 auto 30px auto;
+}
+
+.pannkakor img,
+.brunchtallrik img,
+.fransktoast img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.pannkakor_text {
+  background-color: var(--cream);
+  padding: 20px;
+}
+
+.brunchtallrik_text,
+.fransktoast_text {
+  background-color: var(--cream);
+
+  padding: 20px;
+
+  border-radius: 0 0 25px 25px;
+}
+
+.pannkakor_text h3,
+.brunchtallrik_text h3,
+.fransktoast_text h3 {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.liten_undertext {
+  text-align: center;
+  padding: 30px 60px;
+}
+
+.basrecept_pannkakor {
+  margin-top: 0;
+  background-color: var(--salvia);
+  padding: 15px;
+  color: var(--cream);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  margin: 0;
+  transition: transform 0.2s ease;
+}
+
+.basrecept_pannkakor:hover {
+  transform: translateY(-8px);
+}
+
+.basrecept_pannkakor summary {
+  margin: 0;
+}
+
+/****************************helgfrukost desktop*******************************/
+@media (min-width: 768px) {
+  /*hero*/
+
+  .helgfrukost_grid_1-1 {
+    height: 550px;
+  }
+  .hero_text_helgfrukost h1 {
+    font-size: 60px;
+    margin-bottom: 5px;
+  }
+  .hero_text_helgfrukost h2 {
+    margin-top: 0;
+  }
+
+  /*under hero*/
+  .helgfrukost_info {
+    max-width: 700px;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+/*************************meal prep mobil******************************/
+
+/*tre förberedelser*/
+
+.förberedelser {
+  background-color: var(--oceandeep);
+  padding: 50px 5%;
+
+  max-width: auto;
+  margin: 60px auto;
+}
+
+.förberedelser h2 {
+  color: var(--butter);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.förberedelser .smart_underrubrik {
+  color: var(--butter);
+  text-align: center;
+  padding: 10px 25px;
+}
+
+.glasburkar,
+.söndagsbatchen,
+.granola {
+  padding: 35px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.glasburkar,
+.granola {
+  background-color: var(--salvia);
+}
+
+.söndagsbatchen {
+  background-color: var(--butter);
+}
+
+.glasburkar h3,
+.söndagsbatchen h3,
+.granola h3 {
+  margin-bottom: 15px;
+  color: var(--oceandeep);
+}
+
+.glasburkar strong,
+.söndagsbatchen strong {
+  font-weight: 700;
+}
+
+/*veckans förberedda favoriter*/
+
+.veckans_förberedda {
+  padding: 40px 20px;
+}
+
+.veckans_förberedda h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  color: var(--salvia);
+}
+
+.overnightoats,
+.chiapudding {
+  width: 400px;
+  margin: 0 auto 30px auto;
+}
+
+.overnightoats img,
+.chiapudding img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.overnightoats_text,
+.chiapudding_text {
+  background-color: var(--butter);
+
+  padding: 20px;
+
+  border-radius: 0 0 25px 25px;
+}
+
+.overnightoats_text h3,
+.chiapudding_text h3 {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+/*smaksättningar*/
+
+.smaksättningar h2 {
+  max-width: 700px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.jordnöt,
+.choklad {
+  background-color: var(--salvia);
+  border-radius: 15px;
+  padding: 0 20px;
+}
+
+.mango,
+.bär {
+  background-color: var(--butter);
+  border-radius: 15px;
+  padding: 0 20px;
+}
+
+.grabandgo {
+  background-color: var(--oceandeep);
+  color: var(--butter);
+  border-radius: 15px;
+  padding: 30px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+/*********************************meal prep desktop****************************/
+@media (min-width: 768px) {
+  /*hero*/
+
+  .mealprep_grid_1-1 {
+    height: 550px;
+  }
+  .hero_text_mealprep h1 {
+    font-size: 60px;
+    margin-bottom: 5px;
+  }
+  .hero_text_mealprep h2 {
+    margin-top: 0;
+  }
+  /*under hero*/
+  .mealprep_info {
+    max-width: 700px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  /*smarta förberedelser*/
+
+  .förberedelser h2 {
+    margin-bottom: 10px;
+  }
+
+  .smart_underrubrik {
+    max-width: 700px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  /*förberedda favoriter*/
+
+  .veckans_förberedda h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .overnightoats_text,
+  .chiapudding_text {
+    background: transparent;
+  }
+  .overnightoats_img img,
+  .chiapudding_img img {
+    border-radius: 15px;
+  }
+
+  /*smak*/
+  .jordnöt,
+  .mango,
+  .choklad,
+  .bär,
+  .grabandgo {
+    text-align: left;
+  }
+}

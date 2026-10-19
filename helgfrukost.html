@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>helgfrukost</title>
+    <link rel="stylesheet" href="layout.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Standard favicon för äldre/alla webbläsare -->
+    <link rel="icon" href="favicon_io/favicon.ico" sizes="32x32" />
+
+    <!-- Ikon för Apple/iOS-enheter när sidan sparas på hemskärmen -->
+    <link rel="apple-touch-icon" href="favicon_io/apple-touch-icon.png" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/Logo.png" alt="logo" />
+        </a>
+      </div>
+
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">startsida</a></li>
+          <li><a href="snabb frukost.html">snabb frukost</a></li>
+          <li><a href="näringsrik frukost.html">näringsrik frukost</a></li>
+          <li><a href="helgfrukost.html" class="active">helgfrukost</a></li>
+          <li><a href="meal prep.html">meal prep</a></li>
+          <button class="close-menu">✕</button>
+        </ul>
+        <button class="hamburger" aria-label="öppna meny">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
+    <main>
+      <div class="helgfrukost_grid_1-1">
+        <img src="images/hero_helg_img.png" alt="heroimg" />
+
+        <div class="hero_text_helgfrukost">
+          <h1>helgfrukost</h1>
+          <h2>-Långa morgnar och lyxiga smaker.</h2>
+        </div>
+      </div>
+
+      <div class="helgfrukost_info">
+        <h2>När tiden finns är det dags att koppla av och unna sig lite extra.</h2>
+        <p>På helgen drar vi ner på tempot. När morgonstressen är borta får frukosten ta lite längre tid att laga och avnjutas. Här handlar det om njutning, goda dofter i köket och att starta dagen med en riktig guldkant.</p>
+      </div>
+
+      <section class="tre_klassiska">
+        <h2>3 klassiska helgfavoriter</h2>
+
+        <div class="pannkakor">
+          <img src="images/pannkakor_img.png" alt="pannkakor" />
+          <div class="pannkakor_text">
+            <h3>Luftiga pannkakor eller frasiga våfflor:</h3>
+            <p>En klassiker som garanterat skapar helgkänsla. Servera med färska bär, en klick vispad grädde eller grekiskt yoghurt och lite lönnsirap.</p>
+          </div>
+
+          <details class="basrecept_pannkakor">
+            <summary>Bas-recept</summary>
+            <h3>Pannkakor (1 person):</h3>
+            <p>Ingredienser:</p>
+            <ul>
+              <li>1 dl mjölk</li>
+              <li>1 dl mjöl</li>
+              <li>1 ägg</li>
+            </ul>
+            <p>Gör såhär:</p>
+            <ol>
+              <li>Vispa ihop alla ingredienser i en bunke.</li>
+              <li>Stek i olja/smör i en stor stekpanna tills gyllene och frasig (och supergod).</li>
+            </ol>
+          </details>
+        </div>
+
+        <div class="brunchtallrik">
+          <img src="images/äggröra_img.png" alt="äggröra" />
+
+          <div class="brunchtallrik_text">
+            <h3>Den stora brunchtallriken:</h3>
+            <p>Krämig äggröra, krispigt bacon eller stekt halloumi, avokado och ett färskt surdegsbröd direkt från bageriet.</p>
+          </div>
+        </div>
+
+        <div class="fransktoast">
+          <img src="images/fransk_toast_img.png" alt="fransk toast" />
+
+          <div class="fransktoast_text">
+            <h3>Fransk toast (Fattiga riddare):</h3>
+            <p>Ett perfekt (och supergott) sätt att ta vara på dagsgammalt bröd. Doppa i äggsmet, stek i smör och toppa med kanel, socker och skivad banan.</p>
+          </div>
+        </div>
+
+        <div class="liten_undertext">
+          <h3>Enkelt knep för den perfekta helgfrukosten:</h3>
+          <p>Även när man vill gotta sig är det gott att balansera det söta eller feta med något fräscht -dukar du upp bär, nypressad juice eller skivad frukt vid sidan av känns frukosten som hämtad från ett hotell.</p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer_vanster">
+        <img src="images/Logo.png" alt="Breakfast Daily logo" class="footer_logo" />
+
+        <h2>breakfast daily</h2>
+
+        <div class="footer_lankar">
+          <a href="#">om oss</a>
+          <a href="#">kontakta oss</a>
+        </div>
+
+        <div class="footer_socials">
+          <h3>socials</h3>
+          <a href="#">instagram</a>
+          <a href="#">facebook</a>
+        </div>
+      </div>
+
+      <div class="footer_bild">
+        <img src="images/Footer_Img_.png" alt="Kaffekopp" />
+      </div>
+    </footer>
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const menu = document.querySelector(".menu");
+      const closeButton = document.querySelector(".close-menu");
+
+      hamburger.addEventListener("click", () => {
+        menu.classList.toggle("active");
+      });
+
+      closeButton.addEventListener("click", () => {
+        menu.classList.remove("active");
+      });
+    </script>
+  </body>
+</html>

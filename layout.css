@@ -1,0 +1,853 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+header,
+main,
+footer {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+/***********'logo*****************/
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*logo*/
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  display: block;
+  max-width: 100%;
+}
+
+/*navigation*/
+
+nav {
+  display: flex;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 30px;
+}
+/**********hamburgarmeny*************/
+
+.hamburger {
+  display: none;
+}
+.close-menu {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .menu.active {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 35%;
+    background-color: var(--butter);
+    border-bottom-left-radius: 15px;
+    padding-top: 80px;
+    z-index: 1000;
+  }
+  .menu li {
+    margin: 15px;
+  }
+  .menu a {
+    color: var(--cream);
+    text-decoration: none;
+  }
+  .close-menu {
+    display: block;
+  }
+}
+
+/**********'footer**********/
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 240px;
+}
+
+.footer_vanster {
+  padding: 40px;
+  position: relative;
+}
+
+.footer_logo {
+  width: 100px;
+  height: auto;
+  display: block;
+}
+
+.footer_vanster h2 {
+  margin: 25px 0 15px;
+}
+
+.footer_lankar {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer_socials {
+  position: absolute;
+  top: 145px;
+  left: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.footer_bild {
+  height: 100%;
+  overflow: hidden;
+}
+
+.footer_bild img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  display: block;
+  margin: auto;
+}
+
+.footer_socials h3 {
+  position: relative;
+  top: 6px;
+}
+
+/*****************************************************startsidans hero***********************************************/
+.startsida_grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+}
+
+.startsida_grid_1-1 img {
+  grid-column: 1;
+  grid-row: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.hero_text {
+  position: absolute;
+  grid-column: 1;
+  grid-row: 1;
+  z-index: 2;
+
+  align-self: center;
+  justify-self: start;
+
+  margin-left: 30px;
+  color: var(--cream);
+}
+.hero_text h2 {
+  margin: 0;
+}
+
+.hero_text h1 {
+  margin: 0;
+  font-size: 80px;
+}
+
+.hero_text h3 {
+  margin: 0;
+  max-width: 500px;
+}
+
+/***knappar***/
+.startsida_knappar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 50px;
+}
+.startsida_knappar .button {
+  padding: 15px 30px;
+  border-radius: 15px;
+  font-weight: 600;
+  transition: 0.2s;
+  color: var(--cream);
+}
+
+.startsida_knappar .button:hover {
+  transform: translateY(-2px);
+}
+
+/***näringsämnen tallriksmodellen**/
+
+.näringsämnen_tallriksmodellen {
+  width: 100%;
+  margin: 30px 0;
+  padding: 30px 5%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.näringsämnen_1,
+.näringsämnen_2 {
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 15px;
+  justify-items: stretch;
+}
+
+.näringsämnen_tallriksmodellen details {
+  margin: 0;
+  transition: 0.2s;
+  width: 100%;
+}
+.näringsämnen_tallriksmodellen details:hover {
+  transform: translateY(-2px);
+}
+
+.näringsämnen_tallriksmodellen > p {
+  grid-column: 1 / -1;
+}
+
+/***********kategorier************/
+
+.kategorier {
+  text-align: center;
+  padding: 40px 5%;
+}
+.kategorier a:hover {
+  transform: translateY(-2px);
+}
+.kategorier_1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.kategorier a {
+  transition: 0.2s;
+}
+
+.kategorier_1 a {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: left;
+  text-decoration: none;
+}
+
+.kategorier_1 img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+.kategori p {
+  min-height: 60px;
+}
+
+/********************startsida desktop*********************************/
+
+@media (min-width: 768px) {
+  header {
+    padding: 20px 40px;
+    justify-content: flex-start;
+    gap: 40px;
+  }
+
+  .menu a {
+    font-weight: 400 !important;
+    display: inline-block;
+  }
+
+  .menu a.active {
+    font-weight: 700;
+    border-bottom: 2px solid var(--oceandeep);
+    padding-bottom: 3px;
+  }
+
+  /*hero*/
+
+  .startsida_grid_1-1 {
+    height: 550px;
+  }
+  .hero_text h1 {
+    font-size: 120px;
+  }
+
+  /*text under hero*/
+
+  .startsida_knappar {
+    gap: 100px;
+  }
+  /*näringsämnen*/
+
+  .info_2kol {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    gap: 20px;
+    align-items: stretch;
+  }
+  .startsida_viktigt {
+    height: 100%;
+  }
+
+  /*kategorier*/
+
+  .kategorier_1 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /*footer*/
+  footer {
+    min-height: 240px;
+  }
+  .footer_socials {
+    left: 330px;
+  }
+}
+
+@media (max-width: 500px) {
+  .kategorier_1 h3 {
+    font-size: 0.8rem;
+  }
+
+  .kategorier_1 p {
+    font-size: 0.7rem;
+  }
+
+  .näringsämnen_tallriksmodellen summary {
+    font-size: 0.7rem;
+  }
+  .näringsämnen_tallriksmodellen p {
+    font-size: 0.7rem;
+  }
+}
+/*************************************************************************************************************/
+
+/*************************************snabb frukost**************************************************/
+
+/*hero*/
+
+.snabbfrukost_grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+}
+
+.snabbfrukost_grid_1-1 img {
+  grid-column: 1;
+  grid-row: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.hero_text_snabbfrukost {
+  position: absolute;
+  grid-column: 1;
+  grid-row: 1;
+  z-index: 2;
+
+  align-self: center;
+  justify-self: start;
+
+  margin-left: 30px;
+  color: var(--cream);
+}
+
+/*under hero*/
+.snabbfrukost_info {
+  text-align: center;
+  padding: 40px 25px;
+}
+
+.snabbfrukost_info h2 {
+  color: var(--salvia);
+  font-size: 28px;
+}
+
+.snabbfrukost_info h3 {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.snabbfrukost_info p {
+  line-height: 1.6;
+}
+
+/*tre favoriter*/
+
+.favoritkombinationer h2 {
+  text-align: center;
+}
+.powermackan {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  margin-bottom: 40px;
+}
+
+.supersmoothie {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 40px;
+}
+
+.supersmoothie_img {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.supersmoothie_text {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.snabbskålen {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  margin-bottom: 40px;
+}
+
+/************snabb frukost desktop************/
+@media (min-width: 768px) {
+  /*favokombos*/
+
+  .favoritkombinationer {
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    gap: 30px;
+    justify-content: center;
+  }
+
+  .favoritkombinationer h2 {
+    grid-column: 1/-1;
+    padding-bottom: -20px;
+    padding-top: 20px;
+  }
+
+  .powermackan,
+  .supersmoothie,
+  .snabbskålen {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 250px;
+    margin: 0;
+    text-align: start;
+  }
+
+  .powermacka_img,
+  .supersmoothie_img,
+  .snabbskålen_img {
+    order: 1;
+  }
+
+  .powermacka_text,
+  .supersmoothie_text,
+  .snabbskålen_text {
+    order: 2;
+  }
+
+  .supersmoothie {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .supersmoothie_text {
+    display: flex;
+    flex-direction: column;
+    order: 2;
+    margin-bottom: 30px;
+  }
+
+  .basrecept_smoothie {
+    border-radius: 15px;
+  }
+}
+
+/************************************näringsrik frukost mobil***********************************/
+
+/*hero*/
+
+.näringsrikfrukost_grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+}
+
+.näringsrikfrukost_grid_1-1 img {
+  grid-column: 1;
+  grid-row: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.hero_text_näringsrikfrukost {
+  position: absolute;
+  grid-column: 1;
+  grid-row: 1;
+  z-index: 2;
+
+  align-self: center;
+  justify-self: start;
+
+  margin-left: 30px;
+  color: var(--cream);
+}
+
+/*vad, varför och hur mycket*/
+
+.näring_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+  gap: 15px;
+  justify-content: center;
+}
+
+.kolhydrater,
+.vitaminer,
+.protein,
+.fetter {
+  width: 200px;
+  transition: transform 0.2s ease;
+}
+
+.kolhydrater:hover,
+.vitaminer:hover,
+.protein:hover,
+.fetter:hover {
+  transform: translateY(-8px);
+}
+
+.vad_varför_hur h2 {
+  width: 100%;
+}
+
+.kolhydrater img,
+.vitaminer img,
+.protein img,
+.fetter img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.kolhydrater summary,
+.vitaminer summary,
+.protein summary,
+.fetter summary {
+  min-height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/*******************************näringsrik frukost desktop*********************************/
+
+@media (min-width: 768px) {
+  .näring_grid {
+    grid-template-columns: repeat(4, 200px);
+    gap: 5px;
+  }
+
+  .tre_näringsfrukostar {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .tre_näringsfrukostar h2 {
+    grid-column: 1/-1;
+  }
+
+  .avokadotoast_text,
+  .acai_text,
+  .proteingröt_text {
+    min-height: 200px;
+  }
+}
+
+/**************************************helgfrukost mobil***********************/
+
+/*hero*/
+
+.helgfrukost_grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+}
+
+.helgfrukost_grid_1-1 img {
+  grid-column: 1;
+  grid-row: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.hero_text_helgfrukost {
+  position: absolute;
+  grid-column: 1;
+  grid-row: 1;
+  z-index: 2;
+
+  align-self: center;
+  justify-self: start;
+
+  margin-left: 30px;
+  color: var(--cream);
+}
+
+/*under hero*/
+.helgfrukost_info {
+  text-align: center;
+  padding: 40px 25px;
+}
+
+.helgfrukost_info h2 {
+  color: var(--salvia);
+  font-size: 28px;
+}
+
+.helgfrukost_info p {
+  line-height: 1.6;
+}
+
+/*3 klassiska*/
+
+/***************************************helgfrukost desktop*******************************/
+/*3 klassiska*/
+@media (min-width: 768px) {
+  .tre_klassiska {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .tre_klassiska h2 {
+    grid-column: 1/-1;
+  }
+
+  .pannkakor_text,
+  .brunchtallrik_text,
+  .fransktoast_text {
+    min-height: 250px;
+  }
+
+  .liten_undertext {
+    grid-column: 1/4;
+    max-width: 700px;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+/********************************meal prep mobil*****************/
+
+/*hero*/
+
+.mealprep_grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+}
+
+.mealprep_grid_1-1 img {
+  grid-column: 1;
+  grid-row: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.hero_text_mealprep {
+  position: absolute;
+  grid-column: 1;
+  grid-row: 1;
+  z-index: 2;
+
+  align-self: center;
+  justify-self: start;
+
+  margin-left: 30px;
+  color: var(--cream);
+}
+
+/*under hero*/
+.mealprep_info {
+  text-align: center;
+  padding: 40px 25px;
+}
+
+.mealprep_info h2 {
+  color: var(--salvia);
+  font-size: 28px;
+}
+
+.mealprep_info p {
+  line-height: 1.6;
+}
+
+/*smaksättning*/
+
+.smaksättning_grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  padding: 20px;
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+/*********************meal prep desktop***************/
+
+@media (min-width: 768px) {
+  /*smarta förberedelser*/
+
+  .förberedelser_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+
+  /*förberedda favoriter*/
+  .favoriter_grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+    gap: 150px;
+  }
+
+  .overnightoats,
+  .chiapudding {
+    display: grid;
+    grid-template-columns: 300px 220px;
+    gap: 0px;
+  }
+
+  /*smaksättningar*/
+  .smaksättning_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .jordnöt {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .mango {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .choklad {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .bär {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .grabandgo {
+    grid-column: 3;
+    grid-row: 1 / 3;
+    margin-top: 0;
+    margin-bottom: 0;
+    align-self: stretch;
+    padding: 30px;
+  }
+}
